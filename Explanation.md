@@ -61,3 +61,19 @@ git push origin main
 # Diff and merge
 git diff [branch]
 git merge [branch]
+
+# Undoing changes
+Case - 1 : staged changes
+git reset [file-name]
+git reset
+
+Case -2 : commit changes (for one commit)
+git reset HEAD~1
+
+Case -3 : commited changes (for many commits)
+git reset <commit-hash>
+git reset --hard <commit-hash>
+
+# Fork
+--> New repo that shares code and visibility with the original "upstream" repository.
+--> Fork is a rough copy.
