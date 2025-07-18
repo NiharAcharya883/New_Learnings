@@ -1,7 +1,3 @@
---> Open a Git repo from URL
-git clone [URL]
-cd repository-name
-
 
 --> Complete setup with remote
 
@@ -39,3 +35,29 @@ git fetch                  --> Fetch from all remotes
 git fetch [remote]         --> Fetch from specific remote
 git fetch --all            --> Fetch all remotes
 git fetch --prune          --> Remove deleted remote branches
+
+
+# Configuring Git
+git config --global user.name "Name"
+git config --global user.email "email"
+git config --list  # Check the configurations
+
+# Git clone on local machine
+git clone [git repo link]
+
+# Push command - upload local repo code to remote
+git push
+git push -u origin [branch]
+git push origin main
+
+# Git init - used to create a new git repo
+git init
+git remote add origin <link>
+git remote -v  # To verify remote
+git branch
+git branch -M main  (Rename branch)
+git push origin main
+
+# Diff and merge
+git diff [branch]
+git merge [branch]
