@@ -20,3 +20,8 @@
 --> Executable file - to build docker container
 --> A Dockerfile is usually used to define how the image is built.
 
+
+--> docker image sare build of different layers. (base layer at the bottom and container layer is at the top)
+
+# Difference between Docker and virtual machine
+--> docker only virtualizes application layer while VM virtualizes both application layer and Host OS Kernel
