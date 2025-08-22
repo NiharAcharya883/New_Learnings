@@ -25,3 +25,8 @@
 
 # Difference between Docker and virtual machine
 --> docker only virtualizes application layer while VM virtualizes both application layer and Host OS Kernel
+
+
+# Docker Network
+--> Docker has networking model to connect containers, such that they can communicate with each other.
+--> bridge (default for containers) - if don't specify network, containers connect here. 

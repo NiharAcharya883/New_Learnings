@@ -38,4 +38,12 @@
 
 --> docker exec -it CONT_ID /bin/bash  (run additional commands on a existing running container) (can check the env variables)
 
---> docker exec -it CONT_ID /bin/sh 
+--> docker exec -it CONT_ID /bin/sh
+
+
+--> docker network ls  (list all networks)
+--> docker network create <name>
+
+--> docker run -d -p 27017:27017 --name mongo -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=qwerty --network mongo-network mongo  (create mongo container)
+
+--> docker run -d -p 8081:8081 --name mongo-express -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=qwerty -e ME_CONFIG_MONGODB_URL-"mongodb://admin:qwerty@mongo:27017" --network mongo-network mongo-express  (create mongo express container)
