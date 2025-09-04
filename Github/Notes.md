@@ -4,3 +4,6 @@
 # Github
 --> Website that allows developers to store and manage their code using git.
 
+--> Clone a git repo in a folder after opeining that folder in the terminal
+git clone [URL]
+cd <folder-name>
